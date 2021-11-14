@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+		<title>Hello, world!</title>
+		<link rel="stylesheet" href="css/animate.css" type="text/css">
+		<style type="text/css">
+			.box{
+				background: red;
+				margin:50px;
+				height:200px;
+			}
+			/* tilt */
+			.tilt {
+	box-shadow: 0 20px 27px rgba(0, 0, 0, 0.05);
+	transform-style: preserve-3d;
+	margin: 50px auto;
+}
+
+
+
+.tilt-movie, .tilt-movie img {
+	width: 200px;
+	height: 300px;
+}
+/*tilt */
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="box wow fadeInLeft" 
+						data-wow-delay="0.1s" 
+						style="visibility: visible; -webkit-animation-delay: 0.1s; 
+						-moz-animation-delay: 0.1s; animation-delay: 0.1s;">
+							Hello
+						</div>
+					</div>
+					<div class="col">
+						<div class="box wow fadeInLeft" 
+						data-wow-delay="0.2s" 
+						style="visibility: visible; -webkit-animation-delay: 0.2s; 
+						-moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+							Hello
+						</div>
+					</div>
+					<div class="col">
+						<div class="box wow fadeInLeft" 
+						data-wow-delay="0.3s" 
+						style="visibility: visible; -webkit-animation-delay: 0.3s; 
+						-moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+							Hello
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- tilt -->
+		<div>
+			<div class="tilt tilt-movie" data-tilt data-tilt-glare="true" data-tilt-scale="1.1">
+				<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTU4ODQzNDg0Nl5BMl5BanBnXkFtZTgwNjQ5MTE0MjI@._V1_SY1000_SX675_AL_.jpg">
+			</div>
+			
+		</div>
+		<!-- tilt -->
+
+	<script src="js/wow.min.js"></script>
+    <script>
+     new WOW().init();
+    </script>
+
+	<!-- tilt.js -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+
+	<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+
+	<!-- tilt.js -->
+	</body>
+</html>
